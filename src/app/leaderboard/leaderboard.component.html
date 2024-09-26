@@ -1,0 +1,15 @@
+<div class="leaderboard">
+    <h2>Leaderboard</h2>
+    
+    <div *ngFor="let entry of leaderboardEntries" class="leaderboard-item">
+      <div class="avatar">
+        <img [src]="entry.avatar" alt="Avatar">
+      </div>
+      <div class="details">
+        <p><strong>{{ entry.username }}</strong></p>
+        <p>{{ entry.co2 }}</p>
+        <p>{{ entry.score }}</p>
+      </div>
+    </div>
+  </div>
+  
